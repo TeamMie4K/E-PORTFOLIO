@@ -567,6 +567,20 @@
         max-height: 200px;
         margin-bottom: 20px;
     }
+    .layer-activities h2{
+        font-size: 16px;
+    }
+    .layer-activities:hover h2{
+        bottom: 40%;
+    }
+}
+@media(max-width: 900px){
+    .layer-activities h2{
+        font-size: 16px;
+    }
+    .layer-activities:hover h2{
+        bottom: 40%;
+    }
 }
 /* ---------------Skills----------------- */
 .Skills{
@@ -623,6 +637,7 @@
     color: #fff;
     font-size: 32px;
     margin-bottom: 30px;
+    transition: 0.1s;
 }
 .Skills-row h1:hover{
     text-shadow: 0 0 10px rgba(0, 255, 234, 0.397);
@@ -796,6 +811,32 @@ h1.Experienced-text{
     .Last-Awards:hover{
         max-width: 610px;
         max-height: 410px;
+    }
+    .Last-Awards img{
+        top: -15px;
+    }
+}
+@media(max-width: 900px){
+    .Awards-col{
+        max-width: 460px;
+        max-height: 180px;
+        margin-bottom: 15px;
+    }
+    .Awards-col:hover{
+        max-width: 610px;
+        max-height: 230px;
+    }
+    .Awards-col img{
+        top: -15px;
+        height: 100%;
+    }
+    .Awards-col img:hover{
+        top: -5px;
+        height: 100%;
+    }
+    .Last-Awards:hover{
+        max-width: 610px;
+        max-height: 420px;
     }
     .Last-Awards img{
         top: -15px;
