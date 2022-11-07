@@ -633,6 +633,7 @@
     font-size: 70px;
     font-weight: 550;
     color: #222;
+    margin-bottom: 50px;
 }
 .Skills-title::before{
     content: attr(data-text);
@@ -688,6 +689,23 @@
 .Skills-div{
     width: 190px;
 }
+
+h1.Proficient-text{
+    color: #f44336;
+    font-size: 45px;
+}
+h1.Experienced-text{
+    color: #ee776e;
+    font-size: 35px;
+}
+h1.Intermediate-text{
+    color: #ebada8;
+    font-size: 30px;
+}
+h1.Beginner-text{
+    color: #ffb8b1;
+    font-size: 25px;
+}
 @media(max-width: 700px){
     @keyframes skills{
         0%,10%,100%{
@@ -714,18 +732,6 @@
         height: 80px;
         width: 80px;
     }   
-}
-h1.Proficient-text{
-    color: #f44336;
-}
-h1.Experienced-text{
-    color: #ee776e;
-}
-h1.Intermediate-text{
-    color: #ebada8;
-}
-h1.Experienced-text{
-    color: #ee776e;
 }
 /* ----------Awards----------- */
 .Awards{
