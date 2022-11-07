@@ -290,6 +290,11 @@
 .About-contact .bi:hover{
     color: #f44336;
 }
+@media(max-width: 1370px){
+    .About-col img{
+        width: 400px;
+    }
+}
 @media(max-width: 700px){
     .row{
         flex-direction: column;
@@ -410,6 +415,24 @@
     color: #fff;
     opacity: 1;
 }
+@media(max-width: 1370px){
+    .Education-col img{
+        height: 300px;
+        margin-bottom: 15px;
+    }
+    .Education-col h1{
+        font-size: 30px;
+    }
+    #School_name{
+        font-size: 30px;
+    }
+    .Education-col:hover{
+        padding-top: 10%;
+    }
+    .layer:hover{
+        top: 7%;
+    }
+}
 @media(max-width: 700px){
     .Education .Title{
         background-position: -400px 0;
@@ -431,11 +454,12 @@
         width: 300px;
         margin: 2% 0;
         padding-top: 10%;
-        padding-bottom: 5%;
+        padding-bottom: 0px;
+        border: 1px solid white;
     }
     .Education-col:hover{
-        padding-top: 20%;
-        padding-bottom: 5%;
+        padding-top: 17%;
+        padding-bottom: 0px;
     }
     .Education .Title{
         font-size: 45px;
@@ -457,6 +481,9 @@
     }
     .layer h2{
         font-size: 20px;
+    }
+    .layer:hover{
+        top: 10%;
     }
 }
 /* ---------------Activities----------------- */
@@ -549,6 +576,11 @@
 #Last-Activities-row .Activities-col{
     margin: 0 40px;
 }
+@media(max-width: 1370px){
+    .Activities-col{
+        max-height: 260px;
+    }
+}
 @media(max-width: 700px){
     .Activities-animation{
         align-items: baseline;
@@ -564,8 +596,9 @@
         margin-bottom: 0;
     }
     .Activities-col{
-        max-height: 200px;
-        margin-bottom: 20px;
+        max-height: 280px;
+        width: 450px;
+        margin-bottom: 30px;
     }
     .layer-activities h2{
         font-size: 16px;
@@ -664,6 +697,9 @@
             width: 138px;
         }
     }
+    .Skills{
+        min-height: 70vh;
+    }
     .Skills-title{
         font-size: 45px;
     }
@@ -736,7 +772,7 @@ h1.Experienced-text{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in-out;
     justify-content: center;
     align-items: center;
     margin: 0 40px;
@@ -750,7 +786,7 @@ h1.Experienced-text{
     position: relative;
     width: 100%;
     top: -15px;
-    transition: 0.2s;
+    transition: all 0.3s ease-in-out;
 }
 .Awards-col img:hover{
     top: -5px;
@@ -763,7 +799,7 @@ h1.Experienced-text{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in-out;
     justify-content: center;
     align-items: center;
     margin: 0 40px;
@@ -777,7 +813,7 @@ h1.Experienced-text{
     position: relative;
     width: 100%;
     top: -50px;
-    transition: 0.2s;
+    transition: all 0.3s ease-in-out;
 }
 .Last-Awards img:hover{
     top: 0px;
@@ -789,57 +825,65 @@ h1.Experienced-text{
     .Awards-row{
         flex-direction: column;
         align-items: center;
+        max-height: auto;
         margin-bottom: 0;
     }
     .Awards-col{
-        max-width: 460px;
-        max-height: 180px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
+        max-width: 450px;
+        max-height: 250px;
     }
     .Awards-col:hover{
-        max-width: 610px;
-        max-height: 200px;
+        max-width: 500px;
+        max-height: 350px;
     }
     .Awards-col img{
-        top: -15px;
-        height: 100%;
+        position: relative;
+        width: 100%;
+        top: -20px;
+        transition: all 0.3s ease-in-out;
     }
     .Awards-col img:hover{
-        top: -5px;
-        height: 100%;
+        top: 0px;
+    }
+    .Last-Awards{
+        margin-bottom: 50px;
     }
     .Last-Awards:hover{
-        max-width: 610px;
-        max-height: 410px;
+        max-width: 500px;
+        max-height: 700px;
     }
     .Last-Awards img{
-        top: -15px;
+        top: -50px;
     }
 }
 @media(max-height: 900px){
     .Awards-col{
         max-width: 460px;
-        max-height: 180px;
-        margin-bottom: 15px;
+        max-height: 240px;
+        margin: 0 20px;
+
     }
     .Awards-col:hover{
         max-width: 610px;
-        max-height: 230px;
+        max-height: 348px;
+        flex-basis: 40%;
     }
     .Awards-col img{
-        top: -15px;
-        height: 100%;
+        position: relative;
+        width: 100%;
+        top: -25px;
+        transition: all 0.3s ease-in-out;
     }
     .Awards-col img:hover{
-        top: -5px;
-        height: 100%;
+        top: 0px;
     }
     .Last-Awards:hover{
         max-width: 610px;
-        max-height: 420px;
+        max-height: 500px;
     }
     .Last-Awards img{
-        top: -15px;
+        top: -50px;
     }
 }
 /* -------------Footer----------------- */
