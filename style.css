@@ -960,7 +960,7 @@ h1.Beginner-text{
 }
 @media(max-width: 700px){
     .Awards-title{
-        font-size: 45px;
+        font-size: 50px;
     }
     .Awards-row{
         flex-direction: column;
@@ -975,18 +975,19 @@ h1.Beginner-text{
     }
     .Awards-col:hover{
         max-width: 500px;
-        max-height: 350px;
+        max-height: 354px;
     }
     .Awards-col img{
         position: relative;
         width: 100%;
         top: -20px;
-        transition: all 0.3s ease-in-out;
     }
     .Awards-col img:hover{
         top: 0px;
     }
     .Last-Awards{
+        max-width: 450px;
+        max-height: 300px;
         margin-bottom: 50px;
     }
     .Last-Awards:hover{
@@ -997,9 +998,72 @@ h1.Beginner-text{
         top: -50px;
     }
 }
+@media(max-width: 580px){
+    .Awards-col{
+        max-width: 450px;
+        max-height: 250px;
+    }
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 354px;
+    }
+    .Last-Awards{
+        max-width: 450px;
+        max-height: 300px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 700px;
+    }
+}
+@media(max-width: 545px){
+    .Awards-col{
+        max-width: 450px;
+        max-height: 250px;
+    }
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 228px;
+    }
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 355px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 655px;
+    }
+    .Awards-col img{
+        top: -20px;
+    }
+    .Last-Awards{
+        max-width: 500px;
+        max-height: 340px;
+    }
+    .Last-Awards img{
+        top: -20px;
+    }
+}
+@media(max-width: 490px){
+    .Awards-col{
+        max-width: 380px;
+        max-height: 200px;
+    }
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 320px;
+    }
+    .Last-Awards{
+        max-width: 380px;
+        max-height: 270px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 575px;
+    }
+}
 @media(max-width: 450px){
     .Awards-col{
-        margin-bottom: 30px;
         max-width: 280px;
         max-height: 150px;
     }
@@ -1015,11 +1079,89 @@ h1.Beginner-text{
         max-width: 500px;
         max-height: 465px;
     }
-    .Awards-col img{
-        top: -20px;
+}
+@media(max-width: 414px){
+    .Awards-col{
+        max-width: 300px;
+        max-height: 150px;
     }
-    .Last-Awards img{
-        top: -20px;
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 265px;
+    }
+    .Last-Awards{
+        max-width: 300px;
+        max-height: 180px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 469px;
+    }
+}
+@media(max-width: 412px){
+    .Awards-col{
+        max-width: 300px;
+        max-height: 150px;
+    }
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 235px;
+    }
+    .Last-Awards{
+        max-width: 300px;
+        max-height: 200px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 469px;
+    }
+}
+@media(max-width: 390px){
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 247px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 437px;
+    }
+}
+@media(max-width: 393px){
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 250px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 440px;
+    }
+}
+@media(max-width: 375px){
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 237px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 415px;
+    }
+}
+@media(max-width: 360px){
+    .Awards-col{
+        max-width: 270px;
+        max-height: 150px;
+    }
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 228px;
+    }
+    .Last-Awards{
+        max-width: 270px;
+        max-height: 180px;
+    }
+    .Last-Awards:hover{
+        max-width: 290px;
+        max-height: 395px;
     }
 }
 /* -------------Footer----------------- */
