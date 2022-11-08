@@ -1080,6 +1080,24 @@ h1.Beginner-text{
         max-height: 465px;
     }
 }
+@media(min-width: 420px) and (max-width: 440px){
+    .Awards-col{
+        max-width: 280px;
+        max-height: 150px;
+    }
+    .Awards-col:hover{
+        max-width: 500px;
+        max-height: 270px;
+    }
+    .Last-Awards{
+        max-height: 190px;
+        max-width: 280px;
+    }
+    .Last-Awards:hover{
+        max-width: 500px;
+        max-height: 480px;
+    }
+}
 @media(max-width: 414px){
     .Awards-col{
         max-width: 300px;
