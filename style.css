@@ -28,7 +28,7 @@
     text-align: center;
     background-color: rgba(0, 0, 0, 0.267);
     border-radius: 10px;
-    padding: 7px 50px;
+    padding: 7px 30px;
     position: fixed;
     z-index: 9999;
     transition: all 200ms ease-in-out;
@@ -162,7 +162,7 @@
         font-size: 13px;
     }
     .Nav-bar{
-        padding: 7px 15px;
+        padding: 7px 20px;
     }
     .Nav-link li{
         display: block;
@@ -203,6 +203,14 @@
     .to-top{
         left: 88%;
         top: 93%;
+    }
+}
+@media(max-width: 450px){
+    .Nav-bar{
+        width: 95%;
+    }
+    .Nav-bar{
+        padding: 7px 15px;
     }
 }
 /* --------------------Go To Top Button------------------- */
@@ -331,6 +339,11 @@
         font-size: 20px;
     }
 }
+@media(max-width: 450px){
+    .About{
+        min-height: 85vh;
+    }
+}
 /* ---------------Education------------------ */
 .Education{
     position: relative;
@@ -362,9 +375,10 @@
 }
 .Education-col:hover{
     background-color: #303030;
-    padding: 6% 0 1%;
+    padding: 5% 0 1%;
 }
 .Education .Title{
+    margin-bottom: 30px;
     font-size: 70px;
     font-weight: 550;
     color: transparent;
@@ -372,12 +386,12 @@
     background-image: linear-gradient(#fff,#fff);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-position: -2000px 0;
-    animation: backcolorin 8s linear infinite alternate;
+    background-position: -1200px 0;
+    animation: backcolorin 5s linear infinite alternate;
 }
 @keyframes backcolorin{
     100%{
-        background-position: 0 0;
+        background-position: 100px 0;
     }
 }
 .Education-col img{
@@ -453,19 +467,22 @@
     .Education-col{
         width: 300px;
         margin: 2% 0;
-        padding-top: 10%;
-        padding-bottom: 0px;
-        border: 1px solid white;
+        padding-top: 0%;
+        padding-bottom: 20px;
     }
     .Education-col:hover{
-        padding-top: 17%;
-        padding-bottom: 0px;
+        padding-top: 10%;
+        padding-bottom: 20px;
     }
     .Education .Title{
         font-size: 45px;
+        margin-bottom: 30px;
     }
     .Education-col img{
         height: 200px;
+    }
+    #School_name{
+        font-size: 25px;
     }
     .Education-col h1{
         font-size: 25px;
@@ -483,9 +500,29 @@
         font-size: 20px;
     }
     .layer:hover{
-        top: 10%;
+        top: 5%;
     }
 }
+@media(max-width: 450px){
+    .Education{
+        max-height:auto;
+    }
+    .Education .Title{
+        margin-bottom: 30px;
+    }
+    #School_name{
+        font-size: 25px;
+    }
+    .Education-col{
+    }
+    .Education-col img{
+        height: 150px;
+    }
+    .Education-col:hover{
+        padding-top: 20%;
+    }
+}
+
 /* ---------------Activities----------------- */
 .Activities{
     position: relative;
@@ -499,22 +536,41 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
+    overflow: hidden;
 }
+/*-----------------Activities Text Animation---------------*/
 .Activities-animation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 80px;
     overflow: hidden;
 }
-#Activities-title{
-    height: 80px;
+.Activities-text-animation{
+    position: relative;
+    font-weight: 600;
     font-size: 70px;
-    font-weight: 550;
-    color: #fff;
-    margin-bottom: 20px;
-    overflow: hidden;
+    color: white;
+}
+.Activities-text-animation:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #292929;
+    border-left: 3px solid white;
+    animation: animate 4.5s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+/*-----------Activities text animation end--------------*/
+.Activities-content{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .Activities-row{
     position: relative;
@@ -571,7 +627,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
 }
 #Last-Activities-row .Activities-col{
     margin: 0 40px;
@@ -579,6 +634,14 @@
 @media(max-width: 1370px){
     .Activities-col{
         max-height: 260px;
+    }
+}
+@media(max-height: 900px){
+    .layer-activities h2{
+        font-size: 16px;
+    }
+    .layer-activities:hover h2{
+        bottom: 40%;
     }
 }
 @media(max-width: 700px){
@@ -607,12 +670,14 @@
         bottom: 40%;
     }
 }
-@media(max-height: 900px){
-    .layer-activities h2{
-        font-size: 16px;
+@media(max-width: 450px){
+    #Activities-title{
+        margin-bottom: 20px;
     }
-    .layer-activities:hover h2{
-        bottom: 40%;
+    .Activities-col{
+        max-height: 200px;
+        width: 330px;
+        margin-bottom: 30px;
     }
 }
 /* ---------------Skills----------------- */
@@ -719,7 +784,7 @@ h1.Beginner-text{
         min-height: 70vh;
     }
     .Skills-title{
-        font-size: 45px;
+        font-size: 50px;
     }
     .Skills-row h1{
         font-size: 20px;
@@ -731,7 +796,47 @@ h1.Beginner-text{
     .Skills-row img:hover{
         height: 80px;
         width: 80px;
-    }   
+    }
+    h1.Proficient-text{
+        color: #f44336;
+        font-size: 45px;
+    }
+    h1.Experienced-text{
+        color: #ee776e;
+        font-size: 35px;
+    }
+    h1.Intermediate-text{
+        color: #ebada8;
+        font-size: 30px;
+    }
+    h1.Beginner-text{
+        color: #ffb8b1;
+        font-size: 25px;
+    }
+}
+@media(max-width: 450px){
+    .Skills-row img{
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .Skills-row img:hover{
+        height: 70px;
+        width: 70px;
+    }
+    h1.Proficient-text{
+        font-size: 40px;
+    }
+    h1.Experienced-text{
+        font-size: 30px;
+    }
+    h1.Intermediate-text{
+        font-size: 25px;
+    }
+    h1.Beginner-text{
+        font-size: 20px;
+    }
 }
 /* ----------Awards----------- */
 .Awards{
@@ -824,6 +929,35 @@ h1.Beginner-text{
 .Last-Awards img:hover{
     top: 0px;
 }
+@media(max-height: 900px){
+    .Awards-col{
+        max-width: 460px;
+        max-height: 240px;
+        margin: 0 20px;
+
+    }
+    .Awards-col:hover{
+        max-width: 610px;
+        max-height: 348px;
+        flex-basis: 40%;
+    }
+    .Awards-col img{
+        position: relative;
+        width: 100%;
+        top: -25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .Awards-col img:hover{
+        top: 0px;
+    }
+    .Last-Awards:hover{
+        max-width: 610px;
+        max-height: 500px;
+    }
+    .Last-Awards img{
+        top: -50px;
+    }
+}
 @media(max-width: 700px){
     .Awards-title{
         font-size: 45px;
@@ -863,33 +997,29 @@ h1.Beginner-text{
         top: -50px;
     }
 }
-@media(max-height: 900px){
+@media(max-width: 450px){
     .Awards-col{
-        max-width: 460px;
-        max-height: 240px;
-        margin: 0 20px;
-
+        margin-bottom: 30px;
+        max-width: 280px;
+        max-height: 150px;
     }
     .Awards-col:hover{
-        max-width: 610px;
-        max-height: 348px;
-        flex-basis: 40%;
+        max-width: 500px;
+        max-height: 235px;
     }
-    .Awards-col img{
-        position: relative;
-        width: 100%;
-        top: -25px;
-        transition: all 0.3s ease-in-out;
-    }
-    .Awards-col img:hover{
-        top: 0px;
+    .Last-Awards{
+        max-height: 190px;
+        max-width: 280px;
     }
     .Last-Awards:hover{
-        max-width: 610px;
-        max-height: 500px;
+        max-width: 500px;
+        max-height: 465px;
+    }
+    .Awards-col img{
+        top: -20px;
     }
     .Last-Awards img{
-        top: -50px;
+        top: -20px;
     }
 }
 /* -------------Footer----------------- */

@@ -115,61 +115,62 @@
     <!-- ----------------Activities---------------- -->
     <section class="Activities" id="Activities">
         <div class="Activities-animation">
-            <h1 class="auto-type" id="Activities-title"></h1>
+                <span class="Activities-text-animation" id="Activities-title">Activities</span>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <div class="Activities-row">
-            <div class="Activities-col">
-                <img src="img/Activities/Microbit.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>การอบรม Microbit</h2>
-                    </div>
+        <div class="Activities-content">
+            <div class="Activities-row">
+                <div class="Activities-col">
+                    <img src="img/Activities/Microbit.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>การอบรม Microbit</h2>
+                        </div>
+                </div>
+                <div class="Activities-col">
+                    <img src="img/Activities/Math.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>การอบรม สอวน. คณิตศาสตร์</h2>
+                        </div>
+                </div>
+                <div class="Activities-col">
+                    <img src="img/Activities/SMC.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>รับหน้าที่ถ่ายภาพงานรับน้องวิทย์-คอม 2565</h2>
+                        </div>
+                </div>
             </div>
-            <div class="Activities-col">
-                <img src="img/Activities/Math.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>การอบรม สอวน. คณิตศาสตร์</h2>
-                    </div>
+            <div class="Activities-row">
+                <div class="Activities-col">
+                    <img src="img/Activities/Bigcleaning.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>Big Cleaning Day</h2>
+                        </div>
+                </div>
+                <div class="Activities-col">
+                    <img src="img/Activities/Candle.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>หล่อเทียนวันเข้าพรรษา</h2>
+                        </div>
+                </div>
+                <div class="Activities-col">
+                    <img src="img/Activities/Basketball.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>นักกีฬาบาสเก็ตบอล คณะสีแดง กีฬาสีประจำปี 2562</h2>
+                        </div>
+                </div>
             </div>
-            <div class="Activities-col">
-                <img src="img/Activities/SMC.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>รับหน้าที่ถ่ายภาพงานรับน้องวิทย์-คอม 2565</h2>
-                    </div>
-            </div>
-        </div>
-        <div class="Activities-row">
-            <div class="Activities-col">
-                <img src="img/Activities/Bigcleaning.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>Big Cleaning Day</h2>
-                    </div>
-            </div>
-            <div class="Activities-col">
-                <img src="img/Activities/Candle.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>หล่อเทียนวันเข้าพรรษา</h2>
-                    </div>
-            </div>
-            <div class="Activities-col">
-                <img src="img/Activities/Basketball.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>นักกีฬาบาสเก็ตบอล คณะสีแดง กีฬาสีประจำปี 2562</h2>
-                    </div>
-            </div>
-        </div>
-        <div class="Activities-row">
-            <div class="Activities-col">
-                <img src="img/Activities/Cheergreen.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>เชียร์ลีดเดอร์ คณะสีเขียว กีฬาสีประจะปี 2561</h2>
-                    </div>
-            </div>
-            <div class="Activities-col">
-                <img src="img/Activities/Cheerred.jpg" alt="">
-                    <div class="layer-activities">
-                        <h2>เชียร์ลีดเดอร์ คณะสีแดง กีฬาสีประจะปี 2562</h2>
-                    </div>
+            <div class="Activities-row">
+                <div class="Activities-col">
+                    <img src="img/Activities/Cheergreen.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>เชียร์ลีดเดอร์ คณะสีเขียว กีฬาสีประจะปี 2561</h2>
+                        </div>
+                </div>
+                <div class="Activities-col">
+                    <img src="img/Activities/Cheerred.jpg" alt="">
+                        <div class="layer-activities">
+                            <h2>เชียร์ลีดเดอร์ คณะสีแดง กีฬาสีประจะปี 2562</h2>
+                        </div>
+                </div>
             </div>
         </div>
     </section>
@@ -360,12 +361,19 @@
          const toTop = document.querySelector(".to-top");
     </script>
     <script>
-           var typed = new Typed(".auto-type", {
-               strings: ["ACTIVITIES","SEITIVITCA"],
-               typeSpeed: 150,
-               backSpeed: 150,
-               loop: true
-            })
+        const text = document.querySelector(".Activities-text-animation");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "ACTIVITIES";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "SEITIVITCA";
+            }, 4600);
+        }
+        textLoad();
+        setInterval(textLoad, 9000);
     </script>
+
 </body>
 </html>
