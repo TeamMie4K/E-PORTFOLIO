@@ -950,9 +950,13 @@ h1.Beginner-text{
     .Awards-col img:hover{
         top: 0px;
     }
+    .Last-Awards{
+        max-width: 460px;
+        max-height: 240px;
+    }
     .Last-Awards:hover{
         max-width: 610px;
-        max-height: 500px;
+        max-height: 570px;
     }
     .Last-Awards img{
         top: -50px;
