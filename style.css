@@ -926,6 +926,9 @@ h1.Beginner-text{
     top: -50px;
     transition: all 0.3s ease-in-out;
 }
+#TOELFITP img{
+    top: 0px;
+}
 .Last-Awards img:hover{
     top: 0px;
 }
